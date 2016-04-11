@@ -1,3 +1,5 @@
+import sys
+
 def find_restaurant_ratings(file_name):
     """Prints restaurant name and rating"""
 
@@ -18,4 +20,5 @@ def find_restaurant_ratings(file_name):
                                               rating,
                                               )
 
-find_restaurant_ratings("scores.txt")
+file_name = sys.argv[1]
+find_restaurant_ratings(file_name)
